@@ -20,7 +20,7 @@ namespace calculator
                 }
                 catch
                 {
-                    Console.WriteLine("Invalid input");
+                    Console.WriteLine("Error : Invalid input");
                     incorrect = true;
                 }
             }while(incorrect);
@@ -54,7 +54,7 @@ namespace calculator
                 }
                 catch
                 {
-                    Console.WriteLine("Invalid input");
+                    Console.WriteLine("Error : Invalid input");
                     incorrect = true;
                 }
             }while(incorrect);
