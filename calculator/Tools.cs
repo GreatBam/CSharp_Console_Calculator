@@ -81,6 +81,7 @@ namespace calculator
                     Console.WriteLine("Error : Invalid operation");
                     break;
             }
+            result = Math.Round(result,2);
             return result;
         }
         public bool AskUserForContinue()
