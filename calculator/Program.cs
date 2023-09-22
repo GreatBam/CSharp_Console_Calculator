@@ -6,7 +6,7 @@ namespace calculator
     {
         static void Main(string[] args)
         {
-            bool again = true;
+            bool again;
             do
             {
                 int number1 = Tools.AskUserForNumber("Enter the first number : ");
