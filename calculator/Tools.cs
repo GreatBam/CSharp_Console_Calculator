@@ -4,7 +4,7 @@ namespace calculator
 {
     internal class Tools
     {
-        public static int AskUserForNumber(string message)
+        public int AskUserForNumber(string message)
         {
             int number = 0;
             bool incorrect;
@@ -25,7 +25,7 @@ namespace calculator
             }while(incorrect);
             return number;
         }
-        public static int AskUserForOperation()
+        public int AskUserForOperation()
         {
             int operation = 0;
             bool incorrect;
@@ -59,7 +59,7 @@ namespace calculator
             }while(incorrect);
             return operation;
         }
-        public static bool AskUserForContinue()
+        public bool AskUserForContinue()
         {
             bool response = false;
             bool incorrect;
@@ -82,7 +82,7 @@ namespace calculator
             }while(incorrect);
             return response;
         }
-        public static void DisplayResult(int operation, int number1, int number2)
+        public void DisplayResult(int operation, int number1, int number2)
         {
             int result = 0;
             switch (operation)
