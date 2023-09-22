@@ -82,7 +82,7 @@ namespace calculator
             }while(incorrect);
             return response;
         }
-        public void DisplayResult(int operation, int number1, int number2)
+        public int DisplayResult(int operation, int number1, int number2)
         {
             int result = 0;
             switch (operation)
@@ -103,8 +103,7 @@ namespace calculator
                     Console.WriteLine("Error : Invalid operation");
                     break;
             }
-            Console.WriteLine("Your result : " + result);
-            Console.WriteLine();
+            return result;
         }
     }
 }
