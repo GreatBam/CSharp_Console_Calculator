@@ -7,17 +7,22 @@ namespace calculator
         public static int AskUserForNumber(string message)
         {
             int number = 0;
-            Console.Write(message);
-            string input = Console.ReadLine();
-            try
+            bool incorrect;
+            do
             {
-                number = int.Parse(input);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error : " + e);
-                throw;
-            }
+                Console.Write(message);
+                string input = Console.ReadLine();
+                try
+                {
+                    number = int.Parse(input);
+                    incorrect = false;
+                }
+                catch
+                {
+                    Console.WriteLine("Invalid input");
+                    incorrect = true;
+                }
+            }while(incorrect);
             return number;
         }
         public static int AskUserForOperation()
