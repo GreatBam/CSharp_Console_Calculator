@@ -44,17 +44,23 @@ namespace calculator
         public static bool AskUserForContinue()
         {
             bool response = false;
-            Console.Write("Do you want to continue ? (y/n) : ");
-            string input = Console.ReadLine();
-            if (input.ToLower() == "y")
+            bool incorrect = true;
+            while (incorrect)
             {
-                response = true;
-            } else if (input.ToLower() == "n")
-            {
-                response = false;
-            } else {
-                Console.WriteLine("Error : Invalid input");
-                throw new Exception("Invalid input");
+                Console.Write("Do you want to continue ? (y/n) : ");
+                string input = Console.ReadLine();
+                if (input.ToLower() == "y")
+                {
+                    response = true;
+                    incorrect = false;
+                } else if (input.ToLower() == "n")
+                {
+                    response = false;
+                    incorrect = false;
+                } else {
+                    Console.WriteLine("Error : Invalid input");
+                    incorrect = true;
+                }
             }
             return response;
         }

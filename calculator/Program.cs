@@ -32,6 +32,8 @@ namespace calculator
                         break;
                 }
                 Console.WriteLine("Your result : " + result);
+                Console.WriteLine();
+                again = Tools.AskUserForContinue();
             }while (again);
         }
     }
