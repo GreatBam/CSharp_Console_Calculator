@@ -41,5 +41,22 @@ namespace calculator
             }
             return operation;
         }
+        public static bool AskUserForContinue()
+        {
+            bool response = false;
+            Console.Write("Do you want to continue ? (y/n) : ");
+            string input = Console.ReadLine();
+            if (input.ToLower() == "y")
+            {
+                response = true;
+            } else if (input.ToLower() == "n")
+            {
+                response = false;
+            } else {
+                Console.WriteLine("Error : Invalid input");
+                throw new Exception("Invalid input");
+            }
+            return response;
+        }
     }
 }
