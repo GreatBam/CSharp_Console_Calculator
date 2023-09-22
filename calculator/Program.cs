@@ -6,12 +6,21 @@ namespace calculator
     {
         static void Main(string[] args)
         {
-            bool again;
-            int finalResult;
+            bool again = false;
+            int number1 = 0;
+            int finalResult = 0;
             Tools tool = new Tools();
             do
             {
-                int number1 = tool.AskUserForNumber("Enter the first number : ");
+                if(again == true)
+                {
+                    Console.WriteLine("Actual number : " + finalResult);
+                    number1 = finalResult;
+                }
+                else
+                {
+                    number1 = tool.AskUserForNumber("Enter the first number : ");
+                }
                 int userOperator = tool.AskUserForOperation();
                 int number2 = tool.AskUserForNumber("Enter the second number : ");
                 finalResult = tool.DisplayResult(userOperator, number1, number2);
