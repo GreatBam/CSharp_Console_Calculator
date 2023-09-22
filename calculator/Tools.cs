@@ -82,5 +82,29 @@ namespace calculator
             }while(incorrect);
             return response;
         }
+        public static void DisplayResult(int operation, int number1, int number2)
+        {
+            int result = 0;
+            switch (operation)
+            {
+                case 1:
+                    result = number1 + number2;
+                    break;
+                case 2:
+                    result = number1 - number2;
+                    break;
+                case 3:
+                    result = number1 * number2;
+                    break;
+                case 4:
+                    result = number1 / number2;
+                    break;
+                default:
+                    Console.WriteLine("Error : Invalid operation");
+                    break;
+            }
+            Console.WriteLine("Your result : " + result);
+            Console.WriteLine();
+        }
     }
 }
