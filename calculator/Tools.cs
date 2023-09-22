@@ -28,8 +28,8 @@ namespace calculator
         public static int AskUserForOperation()
         {
             int operation = 0;
-            bool incorrect = true;
-            while(incorrect)
+            bool incorrect;
+            do
             {
                 Console.Write("Select an operation :" +
                             "\n\t1. Addition" +
@@ -56,14 +56,14 @@ namespace calculator
                     Console.WriteLine("Invalid input");
                     incorrect = true;
                 }
-            }
+            }while(incorrect);
             return operation;
         }
         public static bool AskUserForContinue()
         {
             bool response = false;
-            bool incorrect = true;
-            while (incorrect)
+            bool incorrect;
+            do
             {
                 Console.Write("Do you want to continue ? (y/n) : ");
                 string input = Console.ReadLine();
@@ -79,7 +79,7 @@ namespace calculator
                     Console.WriteLine("Error : Invalid input");
                     incorrect = true;
                 }
-            }
+            }while(incorrect);
             return response;
         }
     }
