@@ -20,5 +20,26 @@ namespace calculator
             }
             return number;
         }
+        public static int AskUserForOperation()
+        {
+            int operation = 0;
+            Console.Write("Select an operation :" +
+                          "\n\t1. Addition" +
+                          "\n\t2. Subtraction" +
+                          "\n\t3. Multiplication" +
+                          "\n\t4. Division" +
+                          "\n> ");
+            string input = Console.ReadLine();
+            try
+            {
+                operation = int.Parse(input);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error : " + e);
+                throw;
+            }
+            return operation;
+        }
     }
 }
