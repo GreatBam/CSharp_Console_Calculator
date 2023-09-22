@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj": {}
+    "E:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj": {}
   },
   "projects": {
-    "e:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj": {
+    "E:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj",
+        "projectUniqueName": "E:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj",
         "projectName": "calculator",
-        "projectPath": "e:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj",
+        "projectPath": "E:\\Programming\\C#\\Calculator\\calculator\\calculator.csproj",
         "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "e:\\Programming\\C#\\Calculator\\calculator\\obj\\",
+        "outputPath": "E:\\Programming\\C#\\Calculator\\calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
