@@ -59,29 +59,6 @@ namespace calculator
             }while(incorrect);
             return operation;
         }
-        public bool AskUserForContinue()
-        {
-            bool response = false;
-            bool incorrect;
-            do
-            {
-                Console.Write("Do you want to continue ? (y/n) : ");
-                string input = Console.ReadLine();
-                if (input.ToLower() == "y")
-                {
-                    response = true;
-                    incorrect = false;
-                } else if (input.ToLower() == "n")
-                {
-                    response = false;
-                    incorrect = false;
-                } else {
-                    Console.WriteLine("Error : Invalid input");
-                    incorrect = true;
-                }
-            }while(incorrect);
-            return response;
-        }
         public int DisplayResult(int operation, int number1, int number2)
         {
             int result = 0;
@@ -104,6 +81,29 @@ namespace calculator
                     break;
             }
             return result;
+        }
+        public bool AskUserForContinue()
+        {
+            bool response = false;
+            bool incorrect;
+            do
+            {
+                Console.Write("Do you want to continue ? (y/n) : ");
+                string input = Console.ReadLine();
+                if (input.ToLower() == "y")
+                {
+                    response = true;
+                    incorrect = false;
+                } else if (input.ToLower() == "n")
+                {
+                    response = false;
+                    incorrect = false;
+                } else {
+                    Console.WriteLine("Error : Invalid input");
+                    incorrect = true;
+                }
+            }while(incorrect);
+            return response;
         }
     }
 }
