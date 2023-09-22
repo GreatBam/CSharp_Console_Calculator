@@ -1,12 +1,13 @@
 using System;
+using System.Xml.XPath;
 
 namespace calculator
 {
     internal class Tools
     {
-        public int AskUserForNumber(string message)
+        public double AskUserForNumber(string message)
         {
-            int number = 0;
+            double number = 0;
             bool incorrect;
             do
             {
@@ -14,7 +15,7 @@ namespace calculator
                 string input = Console.ReadLine();
                 try
                 {
-                    number = int.Parse(input);
+                    number = double.Parse(input);
                     incorrect = false;
                 }
                 catch
@@ -25,9 +26,9 @@ namespace calculator
             }while(incorrect);
             return number;
         }
-        public int AskUserForOperation()
+        public double AskUserForOperation()
         {
-            int operation = 0;
+            double operation = 0;
             bool incorrect;
             do
             {
@@ -40,7 +41,7 @@ namespace calculator
                 string input = Console.ReadLine();
                 try
                 {
-                    operation = int.Parse(input);
+                    operation = double.Parse(input);
                     if (operation > 0 && operation < 5)
                     {
                         incorrect = false;
@@ -59,9 +60,9 @@ namespace calculator
             }while(incorrect);
             return operation;
         }
-        public int DisplayResult(int operation, int number1, int number2)
+        public double DisplayResult(double operation, double number1, double number2)
         {
-            int result = 0;
+            double result = 0;
             switch (operation)
             {
                 case 1:
