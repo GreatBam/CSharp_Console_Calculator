@@ -88,7 +88,7 @@ namespace calculator
             bool incorrect;
             do
             {
-                Console.Write("Do you want to continue ? (y/n) : ");
+                Console.Write("Continue with this result ? (y/n) : ");
                 string input = Console.ReadLine();
                 if (input.ToLower() == "y")
                 {
