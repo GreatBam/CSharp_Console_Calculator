@@ -21,7 +21,7 @@ namespace calculator
                 {
                     number1 = tool.AskUserForNumber("Enter the first number : ");
                 }
-                double userOperator = tool.AskUserForOperation();
+                int userOperator = tool.AskUserForOperation();
                 double number2 = tool.AskUserForNumber("Enter the second number : ");
                 finalResult = tool.DisplayResult(userOperator, number1, number2);
                 Console.WriteLine("Your result : " + finalResult);

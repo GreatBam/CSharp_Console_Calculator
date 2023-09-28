@@ -26,9 +26,9 @@ namespace calculator
             }while(incorrect);
             return number;
         }
-        public double AskUserForOperation()
+        public int AskUserForOperation()
         {
-            double operation = 0;
+            int operation = 0;
             bool incorrect;
             do
             {
@@ -41,7 +41,7 @@ namespace calculator
                 string input = Console.ReadLine();
                 try
                 {
-                    operation = double.Parse(input);
+                    operation = int.Parse(input);
                     if (operation > 0 && operation < 5)
                     {
                         incorrect = false;
@@ -60,7 +60,7 @@ namespace calculator
             }while(incorrect);
             return operation;
         }
-        public double DisplayResult(double operation, double number1, double number2)
+        public double DisplayResult(int operation, double number1, double number2)
         {
             double result = 0;
             switch (operation)
