@@ -7,7 +7,7 @@ namespace calculator
         static void Main(string[] args)
         {
             bool again = false;
-            double number1 = 0;
+            double number1;
             double finalResult = 0;
             Calculator calculator = new Calculator();
             do
