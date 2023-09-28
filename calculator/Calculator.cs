@@ -3,7 +3,7 @@ using System.Xml.XPath;
 
 namespace calculator
 {
-    internal class Tools
+    internal class Calculator
     {
         public double AskUserForNumber(string message)
         {

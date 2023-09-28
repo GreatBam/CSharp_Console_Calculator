@@ -9,7 +9,7 @@ namespace calculator
             bool again = false;
             double number1 = 0;
             double finalResult = 0;
-            Tools tool = new Tools();
+            Calculator calculator = new Calculator();
             do
             {
                 if(again == true)
@@ -19,14 +19,14 @@ namespace calculator
                 }
                 else
                 {
-                    number1 = tool.AskUserForNumber("Enter the first number : ");
+                    number1 = calculator.AskUserForNumber("Enter the first number : ");
                 }
-                int userOperator = tool.AskUserForOperation();
-                double number2 = tool.AskUserForNumber("Enter the second number : ");
-                finalResult = tool.DisplayResult(userOperator, number1, number2);
+                int userOperator = calculator.AskUserForOperation();
+                double number2 = calculator.AskUserForNumber("Enter the second number : ");
+                finalResult = calculator.DisplayResult(userOperator, number1, number2);
                 Console.WriteLine("Your result : " + finalResult);
                 Console.WriteLine();
-                again = tool.AskUserForContinue();
+                again = calculator.AskUserForContinue();
             }while (again);
         }
     }
